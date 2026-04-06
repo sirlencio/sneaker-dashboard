@@ -1,42 +1,45 @@
-# sneaker-dashboard
+# 👟 SneakerStock Dash
+> Gestión de inventario inteligente y visual.
 
-This template should help get you started developing with Vue 3 in Vite.
+![Vue 3](https://img.shields.io/badge/Vue.js-3.x-4fc08d?style=for-the-badge&logo=vue.js)
+![Pinia](https://img.shields.io/badge/Pinia-Store-ffe162?style=for-the-badge&logo=vue.js)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.x-38bdf8?style=for-the-badge&logo=tailwind-css)
+![Vite](https://img.shields.io/badge/Vite-Tooling-646cff?style=for-the-badge&logo=vite)
 
-## Recommended IDE Setup
+## 📸 Galería del Proyecto
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Página Principal](https://github.com/sirlencio/sneaker-dashboard/blob/main/screenshots/screenshot1.png)
+*Vista principal.*
 
-## Recommended Browser Setup
+![Listado de Sneakers](https://github.com/sirlencio/sneaker-dashboard/blob/main/screenshots/screenshot2.png)
+*Vista de tabla de gestión de sneakers.*
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+![Formulario de Sneakers](https://github.com/sirlencio/sneaker-dashboard/blob/main/screenshots/screenshot3.png)
+*Formulario de creación.*
 
-## Type Support for `.vue` Imports in TS
+## 📋 Descripción
+SneakerStock es un Dashboard interactivo que permite el control total sobre un catálogo de calzado deportivo. La aplicación permite gestionar el stock, visualizar métricas financieras en tiempo real y administrar modelos mediante un flujo de trabajo optimizado.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Este proyecto nace como un ejercicio de **migración conceptual de React a Vue 3**, aplicando patrones avanzados de reactividad y gestión de estado global.
 
-## Customize configuration
+## 🚀 Características
+- **Dashboard de Métricas:** Visualización de stock y valor de inventario mediante gráficos interactivos (Chart.js).
+- **Gestión CRUD:** Operaciones completas para añadir, editar y eliminar productos.
+- **Estado Global:** Implementación de Pinia para mantener la consistencia de datos en toda la App.
+- **Navegación Fluida:** Enrutamiento dinámico con Vue Router y soporte para navegación por hashes.
+- **UI Moderna:** Interfaz limpia, responsiva y con modo "Glassmorphism" construida con Tailwind CSS.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🧠 Aprendizajes: De React a Vue
+Como desarrollador con base en React, este proyecto implementa las siguientes equivalencias:
+- **State Management:** Sustitución de `useState` por `ref` y `reactive`.
+- **Computed Logic:** Uso de `computed` en lugar de `useMemo` para transformaciones de datos costosas.
+- **Lifecycle:** Transición de `useEffect` a `onMounted` y watchers.
+- **Communication:** Implementación de `defineProps` y `defineEmits` para el patrón *Lifting State Up*.
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 🛠️ Stack Tecnológico
+- **Core:** Vue 3 (Composition API)
+- **Store:** Pinia
+- **Router:** Vue Router
+- **Charts:** Chart.js + Vue-Chartjs
+- **Estilos:** Tailwind CSS
+- **Tipado:** TypeScript
